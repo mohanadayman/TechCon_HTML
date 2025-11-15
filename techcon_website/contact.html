@@ -14,13 +14,19 @@
     main { padding:24px 0 }
     .contact-list { list-style:none; padding:0 }
     .contact-list li { margin-bottom:8px }
+    .social-links a { margin-right:12px; color:#0b66b2; text-decoration:none }
+    .map-wrapper { width:100%; aspect-ratio:16/9; max-width:100%; background:#eee; margin:12px 0 }
+    .map-wrapper iframe { width:100%; height:100%; border:0; }
+    form input[type="text"], form input[type="email"], form textarea { width:100%; padding:8px; box-sizing:border-box; margin-top:6px; margin-bottom:12px }
+    form label { font-weight:600 }
+    form button { background:#0b66b2; color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer }
     footer { background:#f5f5f5; padding:12px 16px; text-align:center; font-size:0.95rem }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Contact TechCon</h1>
+      <h1>Contact Us</h1>
       <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -33,12 +39,37 @@
 
   <main>
     <div class="container">
-      <p>If you have questions about TechCon, reach out using one of the contacts below or use the form integration when available.</p>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:info@techcon.example">info@techcon.example</a></li>
-        <li>Press: <a href="mailto:press@techcon.example">press@techcon.example</a></li>
-        <li>General inquiries: +1 (555) 123-4567</li>
-      </ul>
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in touch</h2>
+
+        <p>Email Address: <a href="mailto:email@example.com">email@example.com</a></p>
+
+        <p>Follow us:</p>
+        <p class="social-links">
+          <a href="https://twitter.com/techcon" target="_blank" rel="noopener noreferrer" aria-label="TechCon on Twitter">Twitter</a>
+          <a href="https://www.facebook.com/techcon" target="_blank" rel="noopener noreferrer" aria-label="TechCon on Facebook">Facebook</a>
+          <a href="https://www.linkedin.com/company/techcon" target="_blank" rel="noopener noreferrer" aria-label="TechCon on LinkedIn">LinkedIn</a>
+        </p>
+
+        <h3>Location</h3>
+        <div class="map-wrapper" aria-hidden="false">
+          <iframe src="https://www.google.com/maps?q=Moscone%20Center%20San%20Francisco&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <h3>Contact Us</h3>
+        <form action="#" method="post">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" required placeholder="Your full name">
+
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" required placeholder="you@example.com">
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="6" required placeholder="Write your message here"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </div>
   </main>
 
