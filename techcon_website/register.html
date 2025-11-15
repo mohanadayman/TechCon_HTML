@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="container">
-      <h1>Register for TechCon</h1>
+      <h1>Register for TechCon 2024</h1>
       <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -32,9 +32,32 @@
 
   <main>
     <div class="container">
-      <p>This is a simple registration placeholder. Integrate your ticketing or signup form here.</p>
-      <p>Early bird pricing may be available. For now, use the button below as a placeholder action.</p>
-      <p><a class="btn" href="#">Register Now</a></p>
+      <form action="#" method="post" novalidate>
+        <fieldset style="border:0; padding:0; margin:0 0 16px 0">
+          <legend style="font-size:1.1rem; margin-bottom:8px">Attendee Information</legend>
+
+          <label for="full-name">Full name</label><br>
+          <input id="full-name" name="name" type="text" required placeholder="Your full name" style="width:100%; padding:8px; margin:6px 0 12px 0; box-sizing:border-box">
+
+          <label for="email">Email address</label><br>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" style="width:100%; padding:8px; margin:6px 0 12px 0; box-sizing:border-box">
+
+          <label for="password">Password</label><br>
+          <input id="password" name="password" type="password" required placeholder="Create a password" minlength="8" style="width:100%; padding:8px; margin:6px 0 12px 0; box-sizing:border-box">
+
+          <label for="confirm-password">Confirm password</label><br>
+          <input id="confirm-password" name="confirm_password" type="password" required placeholder="Re-enter your password" minlength="8" style="width:100%; padding:8px; margin:6px 0 12px 0; box-sizing:border-box">
+        </fieldset>
+
+        <div style="margin-bottom:12px">
+          <input id="terms" name="terms" type="checkbox" required>
+          <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+        </div>
+
+        <div>
+          <button type="submit" style="background:#0b66b2; color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer">Register Now</button>
+        </div>
+      </form>
     </div>
   </main>
 
