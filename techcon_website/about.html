@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About TechCon 2024</title>
+  <style>
+    /* Keep styling consistent with homepage */
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; line-height:1.5; color:#222 }
+    header { background:#0b66b2; color:#fff; padding:20px 16px }
+    header h1 { margin:0; font-size:1.6rem }
+    nav { margin-top:10px }
+    nav a { color:#fff; margin-right:12px; text-decoration:none; font-weight:600 }
+    .container { max-width:960px; margin:0 auto; padding:0 16px }
+    main { padding:24px 0 }
+    article { margin-bottom:28px }
+    article h2 { margin-top:0 }
+    .history-images img, .speakers img { max-width:100%; height:auto; display:block; margin:8px 0 }
+    .speaker { display:flex; gap:12px; align-items:flex-start; margin-bottom:12px }
+    .speaker img { width:96px; height:96px; object-fit:cover; border-radius:6px }
+    footer { background:#f5f5f5; padding:12px 16px; text-align:center; font-size:0.95rem }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>About TechCon 2024</h1>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <article aria-labelledby="history-heading">
+        <h2 id="history-heading">History</h2>
+        <p>
+          TechCon began as a regional meetup in 2012 where engineers and designers gathered to share
+          war stories and new tooling. Over the years it has grown into an international conference
+          focusing on web platforms, cloud-native development, and applied AI.
+          The event has expanded from a single day to a multi-track conference with workshops,
+          hackathons, and hands-on labs.
+        </p>
+
+        <div class="history-images">
+          <img src="https://images.unsplash.com/photo-1503424886305-efd2bd7f0456?ixlib=rb-4.0.3&q=80&w=1200&auto=format&fit=crop" alt="TechCon 2012 first meetup - small group photo">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&q=80&w=1200&auto=format&fit=crop" alt="TechCon 2018 - keynote on stage with audience">
+        </div>
+      </article>
+
+      <article aria-labelledby="mission-heading">
+        <h2 id="mission-heading">Mission</h2>
+        <p>
+          Our mission is to create a welcoming, practical, and forward-looking environment for
+          technologists to learn, collaborate, and accelerate innovation. We prioritize hands-on
+          learning, inclusive discussion, and content that helps practitioners ship better
+          products and services.
+        </p>
+
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Light_bulb_icon.svg" alt="Mission icon representing collaboration and innovation" style="width:120px">
+          <figcaption style="font-size:0.9rem;color:#555">Collaboration • Learning • Impact</figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="speakers-heading">
+        <h2 id="speakers-heading">Past Speakers</h2>
+        <p>Below are some notable speakers who have shared their experience and shaped conversations at TechCon.</p>
+
+        <section class="speakers">
+          <div class="speaker">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&q=80&w=800&auto=format&fit=crop&crop=faces" alt="Alex Morgan - Cloud Architect">
+            <div>
+              <h3>Alex Morgan</h3>
+              <p><strong>Cloud Architect</strong> — Alex presented on resilient microservice architectures and
+              has led initiatives to standardize observability across multiple large-scale platforms.</p>
+            </div>
+          </div>
+
+          <div class="speaker">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&q=80&w=800&auto=format&fit=crop&crop=faces" alt="Dr. Sana Lee - AI Researcher">
+            <div>
+              <h3>Dr. Sana Lee</h3>
+              <p><strong>AI Researcher</strong> — Dr. Lee discussed practical ML model deployment and
+              ethical considerations for production AI systems, helping teams bridge research and engineering.</p>
+            </div>
+          </div>
+
+          <div class="speaker">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&q=80&w=800&auto=format&fit=crop&crop=faces" alt="Marcus Chen - Frontend Engineer">
+            <div>
+              <h3>Marcus Chen</h3>
+              <p><strong>Frontend Engineer</strong> — Marcus led a popular workshop on modern web performance
+              patterns and progressive enhancement strategies that attendees still reference today.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>copyright © 2024 TechCon. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
